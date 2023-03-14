@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+            background-color: bisque;
+        }
+        
+        #right {
+            width: 440px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            margin-left: -5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item-1 {
+            width: 55px;
+            height: 52px;
+            margin-top: 23px;
+            margin-bottom: 47px;
+        }
+        
+        .item-2 {
+            margin-top: 0;
+            margin-bottom: 47px;
+        }
+        
+        .item-3 {
+            margin-top: 0;
+            margin-bottom: 47px;
+        }
+        
+        .item-4 {
+            margin-top: 0;
+            margin-bottom: 47px;
+        }
+        
+        .item-5 {
+            margin-top: 0;
+            background-color: white;
+            width: 57px;
+            height: 56px;
+            margin-bottom: 56px;
+            border-radius: 3px;
+        }
+        
+        .item-6 {
+            margin-top: 0;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        .title {
+            margin-left: 41px;
+            margin-top: 35px;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item-1" src="image/logo.png" alt="">
+                    <img class="item-2" src="image/home.png" alt="">
+                    <img class="item-3" src="image/chatting.png" alt="">
+                    <img class="item-4" src="image/calender.png">
+                    <img class="item-5" src="image/cam.png" alt="">
+                    <img class="item-6" src="image/user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="image/avatar.png" width="44" alt="">
+                    <img id="setting" src="image/setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <h1 class="title">Meeting title</h1>
+
+                <div>
+                    <p>Internal</p>
+                    <img src="image/calender_small.png">
+                    <p>Sep 02, 2022</p>
+                    <p>09:00 - 09:00 AM</p>
+                </div>
+            </div>
+            <div id="right">right</div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
